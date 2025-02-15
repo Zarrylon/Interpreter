@@ -454,3 +454,7 @@ FodyWeavers.xsd
 # Additional files built by Visual Studio
 
 # End of https://www.toptal.com/developers/gitignore/api/cmake,visualstudio,c++
+
+# Program output
+tests/outputLex.txt
+tests/outputPar.txt

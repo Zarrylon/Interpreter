@@ -82,7 +82,7 @@ void Lexer::initializeTables()
 	}
 }
 
-void Lexer::startLexicalAnalyze(const std::string& filename)
+void Lexer::startLexicalAnalyzer(const std::string& filename)
 {
 	inputFile.open(filename);
 
@@ -467,11 +467,6 @@ Symbol Lexer::gets()
 
 	return s;
 }
-
-//void Lexer::openFile(const std::string& filename)
-//{
-//	inputFile.open(filename);
-//}
 
 void Lexer::getErrors(const std::string& message)
 {

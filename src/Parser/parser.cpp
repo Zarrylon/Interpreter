@@ -7,7 +7,7 @@ Parser::Parser(const std::string& filename) :
 	head(std::make_shared<Node>(Node{ "<signal-program>", 0, {} })),
 	current(head)
 {
-	lexer.startLexicalAnalyze(filename);
+	lexer.startLexicalAnalyzer(filename);
 	lexer.printLexicalResultsToFile(lexer_output_path);
 }
 

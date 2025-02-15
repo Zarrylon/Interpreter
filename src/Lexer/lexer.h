@@ -62,7 +62,7 @@ public:
 	~Lexer();
 
 	//void openFile(const std::string&);
-	void startLexicalAnalyze(const std::string& filename);
+	void startLexicalAnalyzer(const std::string& filename);
 
 	void printLexicalResultsToFile(const std::string&);
 	void printLexicalResultsToConsole() const; 
@@ -82,6 +82,4 @@ private:
 
 	void printTokensToConsole() const;
 	void printLexemeToConsole(const std::unordered_map<std::string, int>&) const;
-
-	void handleEmptyFile(const std::string&);
 };
