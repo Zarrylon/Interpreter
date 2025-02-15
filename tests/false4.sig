@@ -1,0 +1,4 @@
+PROGRAM TEST;
+BEGIN
+01: 	A := 5
+END;

@@ -1,0 +1,10 @@
+PROGRAM MAIN;
+BEGIN
+10: LINK X, 5;
+	IN 5;
+	V1 := 40;
+	($ INSERT1 $)
+	GOTO 10;
+20: RETURN;
+END;
+

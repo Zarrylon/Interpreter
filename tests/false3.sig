@@ -1,0 +1,4 @@
+Test;
+BEGIN
+  IN 1000;
+END;
