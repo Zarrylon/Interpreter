@@ -179,7 +179,7 @@ void Parser::statements_list()
 	addNode(current.get(), "<statement-list>");
 	auto n = current;
 
-	if (par.id == 403) // END
+	if (par.id == 403 || !doContinue) // END or Error
 	{
 		addNode(current.get(), "<empty>");
 	}
