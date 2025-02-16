@@ -38,7 +38,7 @@ void Parser::addNode(Node* root)
 	}	
 }
 
-void Parser::addNode(Node* root, std::string value)
+void Parser::addNode(Node* root, const std::string& value)
 {
 	if (doContinue)
 	{
@@ -48,7 +48,7 @@ void Parser::addNode(Node* root, std::string value)
 	}
 }
 
-void Parser::printTreeToConsole(Node* n, int depth)
+void Parser::printTreeToConsole(const Node* n, int depth)
 {
 	for (int i = 0; i < depth; i++)
 	{
@@ -65,7 +65,7 @@ void Parser::printTreeToConsole(Node* n, int depth)
 	}
 }
 
-std::string Parser::findInTable(int lexId)
+std::string Parser::findInTable(int lexId) const
 {
 	std::string value = "";
 	if (lexId <= 255)
@@ -86,7 +86,7 @@ std::string Parser::findInTable(int lexId)
 	return value;
 }
 
-std::string Parser::findByKey(std::unordered_map<std::string, int> map, int val)
+std::string Parser::findByKey(const std::unordered_map<std::string, int>& map, int val) const
 {
 	for (auto const& i : map)
 	{
@@ -486,7 +486,7 @@ void Parser::u_integer()
 	else showError("<unsigned-integer>");
 }
 
-void Parser::showError(std::string err)
+void Parser::showError(const std::string& err)
 {
 	if (doContinue)
 	{

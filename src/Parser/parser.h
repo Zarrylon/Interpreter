@@ -48,14 +48,12 @@ public:
 
 private:
 	void nextToken();
-	std::string findInTable(int);
-	std::string findByKey(std::unordered_map<std::string, int>, int);
-
-	void showError(std::string);
+	std::string findInTable(int) const;
+	std::string findByKey(const std::unordered_map<std::string, int>&, int) const;
 
 	void addNode(Node*);
-	void addNode(Node*, std::string);
-	void printTreeToConsole(Node*, int);
+	void addNode(Node*, const std::string&);
+	void printTreeToConsole(const Node*, int);
 
 	void program();
 	void block();
@@ -68,4 +66,6 @@ private:
 	void asmIF_identifier();
 	void identifier();
 	void u_integer();
+
+	void showError(const std::string&);
 };
