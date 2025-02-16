@@ -1,9 +1,9 @@
 # Interpreter
 ## Description:
-Implemented a basic interpretetor with lexical (lexer) and synxtax (parser) analyses of a custom programming language SIGNAL.
+Implemented a lexical analyzer and parser for a custom programming language SIGNAL.
 
 Lexer:
-* Classifies keywords, delimiters, constants and Identifiers. Stores their positions (row, column) and assigns unique IDs.
+* Classifies keywords, delimiters, constants and identifiers. Stores positions (row, column) and assigns unique IDs.
 * Build tables with the stored information.
 * Ignores whitespaces, new lines, tabulations and comments.
 * Detects and handles errors.
